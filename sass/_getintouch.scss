@@ -1,0 +1,98 @@
+
+.getintouch {
+    padding: 80px 0 136px 0;
+    background: #F3F3F3;
+    &__header {
+        margin: 0 0 80px 0;
+    }
+    &__items {
+        margin: 0 -15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        flex: 0 1 33.333%;
+    }
+}
+
+.item {
+    &-getintouch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        background: #fff;
+        padding: 50px 15px;
+        &_active {
+            padding: 80px 15px;
+            background: #252B42;
+            border: 1px solid #FFFFFF;
+            color: #fff;
+        }
+        &:not(:last-child) {
+            margin: 0 0 15px 0;
+        }
+        &__emails {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__email {
+            color: inherit;
+            font-weight: 600px;
+            line-height: 150%;
+            font-size: 16px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__label {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.1px;
+        }
+        &__activebutton {
+            border-radius: 5px;
+            min-height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px 20px;
+            font-weight: 600px;
+            line-height: 142%;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 1px solid #FFFFFF;
+            color: #fff;
+            &:hover {
+                border: 1px solid #fff;
+                color: #252B42;
+                background-color: #fff;
+            }
+        }
+        &__button {
+            border: 1px solid #FF7B47;
+            border-radius: 5px;
+            min-height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px 20px;
+            color: #FF7B47;
+            font-weight: 600px;
+            line-height: 142%;
+            transition: all 0.3s;
+            cursor: pointer;
+            &:hover {
+                background-color: #FF7B47;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*......PRACTICE..................................................*/
+.practice {
+    padding: 80px 0;
+    &__header {
+        margin: 0 0 45px 0;
+    }
+    &__body {
+        margin: 0 -20px -30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__column {
+        padding: 0 20px;
+        margin: 0 0 30px 0;
+        flex: 0 1 25%;
+    }
+}
+
+.item {
+    &-practice {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &__content {
+            padding: 30px;
+            flex: 1 1 auto;
+            box-shadow: 2px 4px 10px 1px #dbdbdb;
+        }
+        &__link {
+            color: inherit;
+            display: inline-block;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:not(:last-child) {
+                margin: 0 0 20px 0;
+            }
+        }
+        &__title {
+            letter-spacing: 0.1px;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 700;
+        }
+        &__text {
+            color: #737373;
+            line-height: 142%;
+        }
+        &__image {
+            display: block;
+            padding: 0px 0px 60% 0px;
+        }
+    }
+}

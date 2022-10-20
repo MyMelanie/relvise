@@ -1,0 +1,12 @@
+
+.page {
+    flex: 1 1 auto;
+    &__services {
+        position: relative;
+        margin: -111px 0 0 0;
+        z-index: 6;
+    }
+    &__clients:not(:last-child) {
+        margin:  0 0 10px 0;
+    }
+}
