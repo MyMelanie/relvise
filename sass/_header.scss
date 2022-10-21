@@ -1,10 +1,9 @@
-
 .header {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 4;
+    z-index: 6;
     &__container {
         display: flex;
         min-height: 104px;

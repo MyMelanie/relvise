@@ -40,12 +40,12 @@
             letter-spacing: 0.2px;
             text-align: center;
             &_orange {
-                background: #FF7B47;
-                color: #FFFFFF;
+                background: #fff;
+                color: #FF7B47;
+                border: 1px solid #FF7B47;
                 &:hover {
-                    background: #fff;
-                    color: #FF7B47;
-                    border: 1px solid #FF7B47;
+                    background: #FF7B47;
+                    color: #FFFFFF;
                 }
             }
             &_border {
