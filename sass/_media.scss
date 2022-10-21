@@ -106,7 +106,14 @@
         font-size: 24px;
     }
 }
-
+@media (max-width: 875px) {
+    .getintouch {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
 @media (min-width: 810px) {
     .subscribe__body {
         display: flex;
@@ -124,6 +131,69 @@
     }
     .subscribe__button {
         padding: 0 15px;
+    }
+}
+@media(max-width: 767px) {
+    .header {
+        &__menu {
+            margin: 0;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 18px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: black;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0,.8);
+        transition: .6s all;
+        color: black;
+        &_active {
+            left: 0;
+        }
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+            font-size: 28px;
+        }
+        &__link {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 @media (min-width: 767px) {
